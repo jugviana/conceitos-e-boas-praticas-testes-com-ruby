@@ -1,5 +1,0 @@
-https://medium.com/trainingcenter/testes-unit%C3%A1rios-mocks-stubs-spies-e-todas-essas-palavras-dif%C3%ADceis-f2765ac87cc8#:~:text=Um%20stub%20%C3%A9%20uma%20evolu%C3%A7%C3%A3o,chamada%20a%20uma%20API%20externa)
-https://medium.com/@ingrid.carvalho.mo/tipos-e-n%C3%ADveis-de-teste-faa9ae13861c
-https://medium.com/elefante-yogue/m1-aula-1-os-diferentes-tipos-de-testes-8943dfe1c476
-https://medium.com/@anne_caroline/principais-tipos-de-teste-de-software-4aeeb7fd23f1
-https://medium.com/assertqualityassurance/abordagem-de-testes-212b6238f0c3

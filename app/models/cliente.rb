@@ -7,6 +7,7 @@ class Cliente
     puts 'Criando objeto cliente'
     @id = parametros[:id]
     @nome = parametros[:nome]
-    @data_nascimento = parametros[:data_nascimento] ? Date.parse(parametros[:data_nascimento]) : nil
+    nascimento_preenchido = parametros[:data_nascimento] && parametros[:data_nascimento].strip.length > 0
+    @data_nascimento = nascimento_preenchido ? Date.parse(parametros[:data_nascimento]) : nil
   end
 end
