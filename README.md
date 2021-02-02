@@ -53,7 +53,7 @@ Os testes elaborados neste projeto foram baseados em diversas fontes de estudo e
 <a id="como-a-implementacao-do-codigo-esta-divida"></a>
 
 ## Como a implementação do código está dividida
-Este projeto foi inspirado e uma implementação de API sem necessariamente respeitar todas as boas práticas de códificação para favorecer a didática do aprendizado dos conceitos de testes.
+Este projeto foi inspirado em uma implementação de API sem necessariamente respeitar todas as boas práticas de códificação para favorecer a didática do aprendizado dos conceitos de testes.
 
 Para ter foco na didática e manter-se simples, este projeto tentou utilizar o mínimo de bibliotecas possíveis e criou camadas para forçar cenários de estudo.
 
@@ -66,7 +66,7 @@ Camada responsável por capitar a chamada externa, a tal requisição (request) 
 Camada com objetivo de validar dados vindo da chamada da API, via Controller.
 
 ### Repositories
-Camada responsável para a manipulação de dados, seja simulando um banco de dados, uma chamada de API e até mesmmo manipulação de arquivo. Num primeiro momento não importa a origem do dado e sim que este camada é responsável por isso. Didaticamente, muitos destes dados podem estar sendo apenas simulados.
+Camada responsável para a manipulação de dados, seja simulando um banco de dados, uma chamada de API e até mesmo manipulação de arquivo. Num primeiro momento não importa a origem do dado e sim que esta camada é responsável por isso. Didaticamente, muitos destes dados podem estar sendo apenas simulados.
 
 ### Models
 Esta camada representa as entidades do negócio, o alvo do tratamento da API. É a representação daquilo que se quer manipular do ponto de vista de neǵocio.
@@ -98,22 +98,26 @@ Mais sobre testes de unitários, na seção [Fontes de estudo](#fontes-de-estudo
 <a id="como-posso-aprender-com-o-projeto"></a>
 
 ## Como posso aprender com o projeto
-Acredito que  este projeto contenha diversas informações interessantes para o aprendizado sobre testes, porém é importante que existe algum roteiro para melhor aproveitá-lo. Então vai aqui uma indicação, especialmente se você sabe bem poucos dos temas abordados neste projeto.
+Acredito que  este projeto contenha diversas informações interessantes para o aprendizado sobre testes, porém é importante que exista algum roteiro para melhor aproveitá-lo. Então vai aqui uma indicação, especialmente se você sabe bem pouco sobre os temas abordados neste projeto.
 
 1. **Leia as [Fontes de estudo](#fontes-de-estudo)**
+
 As fontes indicadas neste documento contém bastante conhecimento básico e até avançado sobre o tema. Há conteúdos conceituais bem importantes e até exemplos bem legais sobre o assunto, além de vídeos. Então vale muito a pena começar consumindo-os.
 
 2. **Entenda a implementação do projeto**
+
 Para que os testes sejam realizados da maneira correta, precisamos entender quais são as regras estabelecidas pelo negócio. No caso deste projeto, é importante entender estas regras pela leitura da própria implementação. 
-Então a dica aqui é tentar entender o que o código faz começando a leitura por um método de alguma classe Controller e ir descendo até a execução da Controller terminar em seu retorno ao mundo exterior.
+Então a dica aqui é tentar entender o que o código faz começando a leitura por um método de alguma classe Controller e ir aprofundando até a execução da Controller terminar em seu retorno ao mundo exterior.
 
 3. **Entenda os testes de integração**
+
 Agora que entendeu as regras de implementação do projeto, vale começar lendo o teste de integraçao correspondente ao método estudado.
 Leia todas as condições de testes do método em questão e entenda o porquê de cada checagem e em quais camadas a execução entrou.
 Realize a execução dos testes e perceba a exibição de algumas mensagens espalhadas pelo código para tentar exibir por onde a *execução* passou.
 
 4. **Entenda os testes unitários**
-Dado que você entendeu todas as passagens dos testes de integração, agora é importante o entendimento dos testes unitários. Perceba as passagens de verificação do método testado e quais os desvios (*mocks*) feitos para que o teste não seja dependente de chamdas externas ao método testado.
+
+Dado que você entendeu todas as passagens dos testes de integração, agora é importante o entendimento dos testes unitários. Perceba as passagens de verificação do método testado e quais os desvios (*mocks*) feitos para que o teste não seja dependente de chamadas externas ao método testado.
 Perceba, também, que a rigorosidade dos testes unitários perante as checagens é diferente dos testes integrados.
 
 <a id="qual-o-foco-dos-testes-de-cada-camada"></a>
@@ -128,7 +132,7 @@ De acordo com os parâmetros de entrada checar as saídas possíveis. Se houver 
 Dado os parâmetros de entrada checar todos os pontos de validações possíveis e os erros esperados. Também deve-se checar o contexto de sucesso da validação e seu retorno.
 
 ### Repositories
-Dado o conjunto de informações validar se as manipulações previstas foram atendidas ou mesmo validar os erros esperados.Neste tipo de teste é comum criar desvios para não depender da existência de base de dados (banco de dados, arquivo, APIs).
+Dado o conjunto de informações validar se as manipulações previstas foram atendidas ou mesmo validar os erros esperados. Neste tipo de teste é comum criar desvios para não depender da existência de base de dados (banco de dados, arquivo, APIs).
 
 ### Serializers
 Validar o formato das saídas previstas e suas variações.
